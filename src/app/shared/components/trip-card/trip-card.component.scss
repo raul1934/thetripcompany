@@ -1,0 +1,88 @@
+.trip {
+  cursor: pointer;
+
+  .image {
+    position: relative;
+    border-radius: 1rem;
+    width: 100;
+    aspect-ratio: 0.736/1;
+    overflow: hidden;
+    border: 1px solid #000;
+
+    .info {
+      position: absolute;
+      backdrop-filter: blur(4px);
+      bottom: 0px;
+      width: 100%;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      gap: .6rem;
+      flex-direction: column;
+
+      .profile {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, -75%);
+        overflow: hidden;
+      }
+
+      .name {
+        color: #FFF;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+
+  .count {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+  }
+
+  .icon{
+    font-size: 16px;
+      color: #5998E3;
+  }
+
+  h5 {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0.5rem;
+  }
+
+  p {
+    margin-block: .5rem;
+    color: #8F8F8F;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: pre-line;
+    max-width: 100% !important;
+  }
+
+  h6 {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

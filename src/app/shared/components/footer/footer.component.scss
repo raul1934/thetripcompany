@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 1rem;
+  user-select: none;
+  z-index: 10;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding-inline-start: 0;
+    transition: all 600ms ease;
+
+    li {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    @media (max-width: 992px){
+      display: none;
+    }
+  }
+
+  img{
+    width: 110px;
+    height: 40px;
+  }
+}
+
+
+

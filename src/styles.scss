@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./assets/scss/icons.css');
+@import url('./assets/scss/normalize.css');
+@import url('./assets/scss/bootstrap-grid.css');
+@import url('./assets/scss/spacers.css');
+@import url('./assets/fonts/helvetica/stylesheet.css');
+@import url('./assets/scss/typograph.scss');
+
+:root {
+  --primary-color: #0b131e;
+  --primary-green: #20ce7d;
+}
+
+* {
+  font-family: "HelveticaNeueCyr", Helvetica, sans-serif;
+  //font-family: Helvetica, Arial, sans-serif;
+}
+
+.bg-dark {
+  background-color: var(--primary-color);
+}
+
+.modal-open{
+  overflow: hidden;
+}
+
+.start-a-trip {
+  border-radius: 7px;
+  background-color: var(--primary-green);
+  padding: 0.5rem 1rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  color: #22262A;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}

@@ -1,0 +1,25 @@
+<drag-scroll class="places">
+  <div drag-scroll-item><b>Brasil</b> (213)</div>
+  <div drag-scroll-item><b>Chile</b> (205)</div>
+  <div drag-scroll-item><b>Spain</b> (178)</div>
+  <div drag-scroll-item><b>France</b> (154)</div>
+  <div drag-scroll-item><b>Italy</b> (123)</div>
+  <div drag-scroll-item><b>Egypt</b> (92)</div>
+  <div drag-scroll-item><b>United States</b> (87)</div>
+  <div drag-scroll-item><b>Argentina</b> (73)</div>
+  <div drag-scroll-item><b>Peru</b> (56)</div>
+</drag-scroll>
+
+<div class="d-flex justify-content-center align-items-center mt-4">
+  <div class="carrousel-input mr-3" (click)="moveLeft()">
+    <i class="ICON-SIT06_LEFT"></i>
+  </div>
+  <drag-scroll #carrousel class="trips">
+    <a [routerLink]="['trip',123]" *ngFor="let _ of [].constructor(20)" drag-scroll-item class="trip-card">
+      <app-trip-card class="d-flex justify-content-center px-2"></app-trip-card>
+    </a>
+  </drag-scroll>
+  <div class="carrousel-input ml-3" (click)="moveRight()">
+    <i class="ICON-SIT05_RIGHT"></i>
+  </div>
+</div>
