@@ -11,7 +11,7 @@ export class ObserveVisibilityItemDirective {
   selector: '[observeVisibility]',
 })
 export class ObserveVisibilityDirective implements AfterContentInit, OnDestroy {
-  @Input('observeVisibilityThreshold') threshold: Array<number> = [0.3];
+  @Input('observeVisibilityThreshold') threshold: Array<number> = [0.1];
   @Output('observeVisibilityIndexChange') intersectionChange = new EventEmitter<number>();
   @ContentChildren(ObserveVisibilityItemDirective, { descendants: true }) items!: QueryList<ObserveVisibilityItemDirective>;
   private observer?: IntersectionObserver;
